@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -212,8 +211,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ userData }) => {
       <CreateProjectModal
         isOpen={isCreateModalOpen}
         onClose={() => setIsCreateModalOpen(false)}
-        onSubmit={handleCreateProject}
-        userData={userData}
+        onCreateProject={handleCreateProject}
       />
     </div>
   );
